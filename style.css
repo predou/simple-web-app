@@ -1,39 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #000;
-  color: white;
-  margin: 0;
-  padding: 40px;
-  text-align: center;
+  color: #fff;
+  padding: 40px 20px;
 }
 
 h1 {
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 .timeline {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.quarter {
-  width: 220px;
+.step {
+  flex: 1 1 200px;
+  text-align: center;
+  position: relative;
 }
 
 .arrow {
   background-color: red;
   color: white;
-  padding: 15px 10px;
+  padding: 15px 20px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
-  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 10% 50%);
-  margin-bottom: 10px;
+  display: inline-block;
+  min-width: 120px;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
   border: 1px solid white;
 }
 
-p {
+.desc {
+  margin-top: 15px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
